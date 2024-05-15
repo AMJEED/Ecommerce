@@ -21,6 +21,9 @@ const Product = ({ product }) => {
           <Typography gutterBottom variant="h6" component="h2">
             ${product.price}
           </Typography>
+
+        
+        
         </div>
         <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" component="p" />
       </CardContent>
@@ -28,6 +31,7 @@ const Product = ({ product }) => {
         <IconButton aria-label="Add to Cart" onClick={() => addToCart(product)}>
           <AddShoppingCart />
         </IconButton>
+        
       </CardActions>
       
     </Card>

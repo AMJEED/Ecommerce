@@ -5,7 +5,7 @@ const productRoutes = require('./src/routes/ProductRoute');
 const cors = require('cors');
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3003;
 const app = express()
 const uri = "mongodb+srv://Aqsa_majeed:e4BM5zUsCACGwiLf@cluster0.aebilcj.mongodb.net/"
 async function connect(){
@@ -21,7 +21,7 @@ async function connect(){
 }
 connect();
 app.use(cors({
-    origin: 'http://localhost:3001'  // Only allow this origin to access your API
+    origin: 'http://localhost:3000'  // Only allow this origin to access your API
 }));
 app.use(express.json())
 app.use('/products', productRoutes);

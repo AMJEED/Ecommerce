@@ -12,6 +12,8 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const response = await axios.get(`${process.env.REACT_APP_API_URL}/products`);
+      console.log("aksj",response); // Logging the response
+
       setData(response.data);
       console.log(response); // Logging the response
     } catch (error) {
