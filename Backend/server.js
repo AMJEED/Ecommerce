@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const PORT = process.env.PORT || 3003;
 const app = express()
-const uri = "mongodb+srv://Aqsa_majeed:e4BM5zUsCACGwiLf@cluster0.aebilcj.mongodb.net/"
+const uri = "YourMongoDBKey"
 async function connect(){
 
     try{
